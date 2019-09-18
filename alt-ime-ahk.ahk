@@ -1,3 +1,14 @@
+Ralt & H::Send,{Blind}{Left}
+Ralt & J::Send,{Blind}{Down}
+Ralt & K::Send,{Blind}{Up}
+Ralt & L::Send,{Blind}{Right}
+
+
+; alt-ime-ahk を読み込む
+#Include ../alt-ime-ahk/IME.ahk
+#Include ../alt-ime-ahk/alt-ime-ahk.ahk
+
+
 ; 左右 Alt キーの空打ちで IME の OFF/ON を切り替える
 ;
 ; 左 Alt キーの空打ちで IME を「英数」に切り替え
@@ -6,7 +17,8 @@
 ;
 ; Author:     karakaram   http://www.karakaram.com/alt-ime-on-off
 
-#Include IME.ahk
+;↓以下の1行をコメントアウト
+;#Include IME.ahk
 
 ; Razer Synapseなど、キーカスタマイズ系のツールを併用しているときのエラー対策
 #MaxHotkeysPerInterval 350
